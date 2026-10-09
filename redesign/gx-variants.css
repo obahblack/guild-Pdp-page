@@ -1,0 +1,144 @@
+/* Guild PDP hero redesign — per-variation styles. Each block is scoped to its root class (.v1 … .v9). */
+
+/* =====================================================================
+   V1 · Toggle Panel  (reference concept 1)
+   ===================================================================== */
+#gx-root .v1 { display: grid; gap: 18px; }
+@media (min-width: 768px) { body.gx-v1 .elementor-element.elementor-element-17a4cdf { --margin-top: 0px; } }
+#gx-root .v1-head { display: grid; gap: 8px; }
+/* Panel: the design system's dark form surface; 400px max keeps it clear of the gallery's prev arrow. */
+#gx-root .v1-panel {
+  display: grid; gap: 14px; width: 100%; max-width: 400px; padding: 16px; border-radius: 14px;
+  background: rgba(13, 13, 13, .92); border: 1px solid var(--gx-border); box-shadow: 0 16px 40px -16px rgba(0, 0, 0, .6);
+}
+#gx-root .v1-group > .gx-legend { display: flex; flex-wrap: wrap; align-items: baseline; gap: 2px 8px; margin-bottom: 8px; font-size: 13px; font-weight: 600; line-height: 18px; letter-spacing: 0; text-transform: none; }
+#gx-root .v1-step { color: var(--gx-muted); }
+#gx-root .v1-val { color: #fff; }
+/* Toggles: secondary-button stroke when off, primary fill when on; no hover colour change. */
+#gx-root .v1-pills { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 6px; }
+#gx-root .v1-pills--2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+#gx-root .v1-pills .gx-opt {
+  justify-content: center; gap: 6px; min-height: 36px; padding: 6px 10px; border-radius: 9999px; white-space: nowrap;
+  background: transparent; border: 1px solid var(--gx-border); font-size: 14px; font-weight: 600; letter-spacing: -.3px; box-shadow: none;
+}
+#gx-root .v1-pills .gx-opt:hover { border-color: var(--gx-border); }
+#gx-root .v1-pills .gx-opt.is-on, #gx-root .v1-pills .gx-opt.is-on:hover { background: var(--gx-primary); border-color: var(--gx-primary); box-shadow: var(--gx-hl); color: #fff; }
+#gx-root .v1-pills .gx-opt.is-off:hover { border-color: var(--gx-border); }
+#gx-root .v1-pills .gx-opt .gx-i { width: 16px; height: 16px; }
+#gx-root .v1 .gx-why { position: absolute !important; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+#gx-root .v1-why { display: flex; gap: 6px; align-items: center; margin-top: 6px; font-size: 12.5px; color: var(--gx-dim); }
+/* Swatches: 24px dots (the original form used ~18px), 12 fit on one row. */
+#gx-root .v1-swatches { gap: 6px; }
+#gx-root .v1-swatches .gx-opt.gx-sw { padding: 0; }
+#gx-root .v1-swatches .gx-sw-dot { width: 24px; height: 24px; }
+#gx-root .v1-swatches .gx-sw:hover .gx-sw-dot { transform: none; }
+#gx-root .v1-swatches .gx-sw.is-on .gx-sw-dot { box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .22), 0 0 0 2px #0d0d0d, 0 0 0 4px #8dbcef; }
+#gx-root .v1-swatches .gx-sw-tick { display: none; }
+#gx-root .v1-colors .gx-sw-list { padding: 4px; margin: -4px; } /* room for the selected ring */
+#gx-root .v1-cta { display: grid; gap: 8px; margin-top: 2px; }
+#gx-root .v1-atc, #gx-root .v1-quote { width: 100%; }
+#gx-root .v1-atc-price { font-weight: 500; opacity: .9; padding-left: 10px; margin-left: 2px; border-left: 1px solid rgba(255, 255, 255, .35); font-variant-numeric: tabular-nums; letter-spacing: -.3px; }
+/* The site's sticky quote bar fades out while it would cover the panel (see v1.js). */
+body.gx-v1 .elementor-element.elementor-element-0a807ef { transition: opacity .25s ease, visibility 0s linear 0s; }
+body.gx-v1.gx-v1-bar-off .elementor-element.elementor-element-0a807ef { opacity: 0 !important; visibility: hidden !important; pointer-events: none !important; transition: opacity .25s ease, visibility 0s linear .25s; }
+@media (max-width: 767px) {
+  #gx-root .v1-panel { max-width: none; }
+  #gx-root .v1-pills .gx-opt { padding: 6px; }
+}
+
+
+/* =====================================================================
+   V2 · Hero Dock  (reference concept 2)
+   ===================================================================== */
+#gx-root .v2 { display: grid; gap: 18px; }
+#gx-root .v2-copy { display: grid; gap: 8px; }
+#gx-root .v2-check { margin-top: 10px; gap: 10px; }
+#gx-root .v2-check li { font-size: 16px; }
+body.gx-v2 .elementor-element.elementor-element-0a807ef { display: none !important; } /* the dock's bar replaces the site's sticky bar */
+
+/* Static hero fit (v2.js, once per screen size): the cart row moves up as one piece, the copy is
+   centred on the cart, and the cart keeps the 80% zoom unless the screen is too short. */
+body.gx-v2.gx-v2-docked .elementor-element.elementor-element-9c2d7d2 { translate: 0 var(--gx-v2-dy, 0px); }
+body.gx-v2.gx-v2-docked .elementor-element.elementor-element-17a4cdf { --margin-top: 0px; --align-self: center; align-self: center; }
+body.gx-v2.gx-v2-docked .side-prod-img .woocommerce-product-gallery__wrapper > div:first-child img.gx-photo { scale: var(--gx-v2-s, .8); }
+
+/* toggles (shared by the dock and the inline panel) */
+:is(#gx-root, #gx-vlayer) .v2-g { display: flex; align-items: center; gap: 10px; min-width: 0; }
+:is(#gx-root, #gx-vlayer) .v2-lab { font-size: 13px; font-weight: 600; line-height: 18px; color: var(--gx-muted); white-space: nowrap; }
+:is(#gx-root, #gx-vlayer) .v2-lab b { font-weight: 600; color: #fff; }
+:is(#gx-root, #gx-vlayer) .v2-fs { min-width: 0; }
+:is(#gx-root, #gx-vlayer) .v2-pills { display: flex; gap: 6px; }
+:is(#gx-root, #gx-vlayer) .v2-pills .gx-opt {
+  flex: none; justify-content: center; gap: 6px; min-height: 36px; padding: 6px 14px; border-radius: 9999px; white-space: nowrap;
+  background: transparent; border: 1px solid var(--gx-border); font-size: 14px; font-weight: 600; letter-spacing: -.3px; box-shadow: none;
+}
+:is(#gx-root, #gx-vlayer) .v2-pills .gx-opt:hover { border-color: var(--gx-border); }
+:is(#gx-root, #gx-vlayer) .v2-pills .gx-opt.is-on { background: var(--gx-primary); border-color: var(--gx-primary); box-shadow: var(--gx-hl); color: #fff; }
+:is(#gx-root, #gx-vlayer) .v2-pills .gx-opt .gx-i { width: 16px; height: 16px; }
+:is(#gx-root, #gx-vlayer) .v2-g .gx-why { position: absolute !important; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+:is(#gx-root, #gx-vlayer) .v2-swatches { gap: 7px; flex-wrap: nowrap; }
+:is(#gx-root, #gx-vlayer) .v2-swatches .gx-opt.gx-sw { padding: 0; }
+:is(#gx-root, #gx-vlayer) .v2-swatches .gx-sw-dot { width: 24px; height: 24px; }
+:is(#gx-root, #gx-vlayer) .v2-swatches .gx-sw:hover .gx-sw-dot { transform: none; }
+:is(#gx-root, #gx-vlayer) .v2-swatches .gx-sw.is-on .gx-sw-dot { box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .22), 0 0 0 2px #121212, 0 0 0 4px #8dbcef; }
+:is(#gx-root, #gx-vlayer) .v2-swatches .gx-sw-tick { display: none; }
+
+/* the bar: build · price · actions (the same row expanded and folded) */
+:is(#gx-root, #gx-vlayer) .v2-bar { display: flex; align-items: center; gap: 20px; min-width: 0; }
+:is(#gx-root, #gx-vlayer) .v2-sum { flex: 1 1 auto; min-width: 0; display: grid; line-height: 1.3; }
+:is(#gx-root, #gx-vlayer) .v2-sum b { font-size: 16px; font-weight: 700; letter-spacing: -.3px; color: #fff; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+:is(#gx-root, #gx-vlayer) .v2-sum span { font-size: 13px; color: var(--gx-muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+:is(#gx-root, #gx-vlayer) .v2-price { flex: none; font-size: 20px; font-weight: 700; letter-spacing: -.4px; color: #fff; font-variant-numeric: tabular-nums; }
+:is(#gx-root, #gx-vlayer) .v2-actions { flex: none; display: flex; align-items: center; gap: 8px; }
+:is(#gx-root, #gx-vlayer) .v2-atc { flex: none; }
+:is(#gx-root, #gx-vlayer) .v2-edit { margin-right: 6px; }
+
+/* the dock (body layer; fixed, aligned to the hero's content box; the site's sticky-bar material) */
+#gx-vlayer .v2-dock {
+  position: fixed; z-index: 2; bottom: 16px; left: var(--gx-cl, 16px); width: var(--gx-cw, calc(100vw - 32px));
+  display: grid; padding: 10px 10px 10px 24px; border-radius: 32px; container-type: inline-size;
+  background: rgba(16, 16, 16, .9); -webkit-backdrop-filter: blur(12px); backdrop-filter: blur(12px);
+  border: 1px solid var(--gx-border); box-shadow: 0 16px 40px -12px rgba(0, 0, 0, .6); color: var(--gx-text);
+  transition: background-color .3s var(--gx-ease); animation: v2-up .4s var(--gx-ease);
+}
+#gx-vlayer .v2-dock.is-collapsed { background: rgba(16, 16, 16, .78); }
+#gx-vlayer .v2-top { display: grid; grid-template-rows: 1fr; transition: grid-template-rows .35s var(--gx-ease), opacity .25s var(--gx-ease); }
+#gx-vlayer .v2-top-in { min-height: 0; overflow: hidden; margin-left: -4px; } /* no padding here: it would keep height when folded */
+#gx-vlayer .v2-pad { padding: 6px 14px 10px 4px; }
+#gx-vlayer .v2-dock.is-collapsed .v2-top { grid-template-rows: 0fr; opacity: 0; }
+#gx-vlayer .v2-groups { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 32px; padding: 0 0 14px; border-bottom: 1px solid rgba(255, 255, 255, .1); }
+#gx-vlayer .v2-note { position: absolute; left: 24px; right: 24px; bottom: calc(100% + 10px); display: flex; justify-content: center; pointer-events: none; }
+#gx-vlayer .v2-note .gx-notice { pointer-events: auto; max-width: 640px; background: rgba(18, 30, 45, .97); box-shadow: 0 12px 32px rgba(0, 0, 0, .5); }
+@container (max-width: 860px) { #gx-vlayer .v2-quote span { display: none; } #gx-vlayer .v2-quote::before { content: "Quote"; } }
+@keyframes v2-up { from { transform: translateY(16px); opacity: 0; } }
+
+/* inline configurator (phones, tablets and short screens) */
+#gx-root .v2-inline {
+  display: grid; gap: 14px; width: 100%; max-width: 400px; padding: 16px; border-radius: 14px;
+  background: rgba(13, 13, 13, .92); border: 1px solid var(--gx-border); box-shadow: 0 16px 40px -16px rgba(0, 0, 0, .6);
+}
+#gx-root .v2-inline .v2-groups { display: grid; gap: 14px; padding-bottom: 14px; border-bottom: 1px solid rgba(255, 255, 255, .1); }
+#gx-root .v2-inline .v2-g { display: grid; gap: 8px; }
+#gx-root .v2-inline .v2-pills { display: grid; grid-auto-flow: column; grid-auto-columns: minmax(0, 1fr); }
+#gx-root .v2-inline .v2-pills .gx-opt { padding: 6px 8px; }
+#gx-root .v2-inline .v2-swatches { flex-wrap: wrap; gap: 6px; padding: 4px; margin: -4px; }
+#gx-root .v2-inline .v2-swatches .gx-sw.is-on .gx-sw-dot { box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .22), 0 0 0 2px #0d0d0d, 0 0 0 4px #8dbcef; }
+#gx-root .v2-inline .v2-bar { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 12px 16px; }
+#gx-root .v2-inline .v2-actions { grid-column: 1 / -1; display: grid; gap: 8px; }
+#gx-root .v2-inline .v2-atc, #gx-root .v2-inline .v2-quote { width: 100%; }
+#gx-vlayer .v2-dock--compact { padding: 8px 8px 8px 20px; transform: translateY(calc(100% + 40px)); visibility: hidden; transition: transform .3s var(--gx-ease), visibility 0s linear .3s; animation: none; }
+#gx-vlayer .v2-dock--compact.is-shown { transform: none; visibility: visible; transition-delay: 0s; }
+#gx-vlayer .v2-dock--compact .v2-bar { gap: 14px; }
+@media (max-width: 767px) {
+  #gx-root .v2-copy { text-align: center; }
+  #gx-root .v2-check { justify-content: center; text-align: left; }
+  #gx-root .v2-check li { font-size: 15px; }
+  #gx-root .v2-inline { max-width: none; }
+  #gx-vlayer .v2-dock--compact { left: 8px; width: calc(100vw - 16px); bottom: 8px; padding: 10px 10px 10px 16px; border-radius: 22px; }
+  #gx-vlayer .v2-dock--compact .v2-bar { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 8px 12px; }
+  #gx-vlayer .v2-dock--compact .v2-actions { grid-column: 1 / -1; display: grid; grid-template-columns: auto 1fr auto; }
+  #gx-vlayer .v2-dock--compact .v2-sum b { font-size: 15px; }
+  #gx-vlayer .v2-dock--compact .v2-price { font-size: 18px; }
+  #gx-vlayer .v2-dock--compact .v2-quote span { display: none; }
+  #gx-vlayer .v2-dock--compact .v2-quote::before { content: "Quote"; }
+}

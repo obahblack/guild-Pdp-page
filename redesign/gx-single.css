@@ -1,0 +1,462 @@
+/* Guild brand palette; reference layout with one hero and no variation switcher. */
+.elementor-16996 .elementor-element.elementor-element-767c751.guild-single-hero {
+  display:block; min-height:820px; padding:64px 0 72px; isolation:isolate;
+  background-image:linear-gradient(90deg,rgba(16,16,16,.42),rgba(16,16,16,.08)),linear-gradient(0deg,rgba(16,16,16,.8),transparent 60%),url('https://959cd70c.delivery.rocketcdn.me/wp-content/uploads/2024/11/PRODUCT-BG.png');
+  background-size:cover; background-position:center; color:#f3f4f6;
+}
+.guild-single-hero * {box-sizing:border-box}
+.guild-hero-inner {max-width:1440px; margin:auto; padding:0 64px; display:grid; grid-template-columns:43% 57%; align-items:center; font-family:'Plus Jakarta Sans',sans-serif; gap:0}
+.guild-hero-copy {padding-bottom:100px; position:relative; z-index:1}
+.guild-single-hero .guild-hero-copy h1 {font-family:inherit; font-size:72px; font-weight:700; line-height:1.08; letter-spacing:-2px; color:#fff; margin:0 0 28px}
+.guild-single-hero .guild-range {font-size:22px; line-height:1.5; margin:0 0 36px; color:#fff}
+.guild-single-hero .guild-benefits {list-style:none; padding:0; margin:0; display:grid; gap:20px}
+.guild-benefits li {display:flex; align-items:center; gap:14px; font-size:22px; line-height:1.5; color:#fff}
+.guild-benefits li span {width:24px; height:24px; flex:none; border-radius:50%; display:grid; place-items:center; background:#3871b0; color:#fff; font-size:17px; font-weight:700}
+.guild-product {min-width:0}
+.guild-gallery {display:flex; align-items:center; position:relative; height:570px; margin:0 -28px}
+.guild-single-hero .guild-cart {display:block; width:100%; height:100%; object-fit:contain; max-width:none; filter:drop-shadow(0 18px 14px rgba(0,0,0,.3))}
+.guild-gallery button {position:absolute; z-index:2; border:2px solid #fff; border-radius:50%; background:transparent; color:#fff; width:42px; height:42px; padding:0; font-size:32px; line-height:30px; cursor:pointer}
+.guild-gallery button:first-child {left:0}
+.guild-gallery button:last-child {right:0}
+.guild-config {display:grid; grid-template-columns:1fr 1fr 1fr 1.15fr; gap:14px; align-items:end; background:rgba(20,20,20,.96); border:1px solid #3e3e3f; border-radius:16px; padding:20px; box-shadow:0 16px 40px #0003}
+.guild-config label {font-size:14px; line-height:1.5; color:#c5c5c5; margin:0; min-width:0}
+.guild-config select {display:block; margin-top:7px; width:100%; height:44px; background:#101010; color:#f3f4f6; border:1px solid #3e3e3f; border-radius:8px; padding:0 9px; font:500 14px 'Plus Jakarta Sans',sans-serif; cursor:pointer; color-scheme:dark}
+.guild-color-control {position:relative}
+.guild-color-control select {padding-left:34px}
+.guild-swatch {position:absolute; left:9px; top:14px; height:17px; width:17px; border-radius:50%; border:1px solid #ffffff80; pointer-events:none}
+.guild-single-hero .guild-add {display:flex; align-items:center; justify-content:center; gap:10px; height:48px; padding:0 12px; background:#3871b0; color:#fff; border:0; border-radius:999px; font:600 14px 'Plus Jakarta Sans',sans-serif; cursor:pointer; white-space:nowrap}
+.guild-add svg {width:22px; height:22px}
+.guild-config :focus-visible,.guild-gallery button:focus-visible {outline:3px solid #8fbdf0; outline-offset:4px}
+.guild-status {font-size:14px; line-height:1.5; margin:10px 0 0; min-height:21px; color:#f3f4f6}
+@media(max-width:1100px) { .guild-hero-inner {padding:0 32px; grid-template-columns:42% 58%}.guild-config {gap:8px; padding:14px}.guild-gallery {height:500px}.guild-benefits li {gap:10px}.guild-hero-copy {padding-bottom:80px} }
+@media(max-width:900px) {.guild-hero-inner {grid-template-columns:1fr}.guild-hero-copy {padding:0}.guild-gallery {height:480px; margin:0}.guild-single-hero .guild-hero-copy h1 {font-size:56px}.elementor-16996 .elementor-element.elementor-element-767c751.guild-single-hero {padding:48px 0;min-height:0}.guild-config {gap:14px;padding:20px}}
+@media(max-width:540px) {.guild-hero-inner {padding:0 24px}.guild-single-hero .guild-hero-copy h1 {font-size:44px;letter-spacing:-1px}.guild-gallery {height:340px;margin:12px -12px}.guild-config {grid-template-columns:1fr 1fr}.guild-add {width:100%}.guild-single-hero .guild-add {height:44px}.guild-benefits li {align-items:flex-start}.guild-benefits li span {margin-top:5px}.guild-range {max-width:320px}.guild-gallery button {width:36px;height:36px} }
+/* Reference bar proportions: rounded fields, leading icons and vertical separators. */
+.elementor-16996 .elementor-element.elementor-element-767c751.guild-single-hero {padding-top:140px;padding-bottom:0;overflow:visible}
+.guild-single-hero .guild-hero-inner {padding-bottom:56px}
+.guild-single-hero .guild-hero-copy {padding-top:28px;padding-bottom:96px}
+.guild-single-hero .guild-config {width:calc(100% + 90px);margin:12px 0 0 -90px;display:grid;grid-template-columns:1fr 1fr 1.1fr 1.2fr;align-items:center;gap:0;padding:22px 18px;background:rgba(20,20,20,.97);border:1px solid #3e3e3f;border-radius:24px;position:relative;z-index:3}
+.guild-single-hero .guild-config label {position:relative;padding:0 14px;font-size:16px;font-weight:400;line-height:1.5;color:#c5c5c5;display:block}
+.guild-single-hero .guild-config label::after {content:'';position:absolute;right:0;bottom:7px;height:44px;width:1px;background:#3e3e3f}
+.guild-single-hero .guild-config select {appearance:none;-webkit-appearance:none;display:block!important;opacity:1;visibility:visible;width:100%;height:52px;margin:8px 0 0;background:#101010;color:#f3f4f6;border:1px solid #3e3e3f;border-radius:999px;padding:0 30px 0 44px;font:500 16px 'Plus Jakarta Sans',sans-serif;line-height:normal}
+.guild-single-hero .guild-color-control,.guild-single-hero .guild-control {position:relative}
+.guild-single-hero .guild-swatch {height:26px;width:26px;left:10px;top:13px}
+.guild-single-hero .guild-control>svg {position:absolute;left:12px;top:14px;width:24px;height:24px;color:#3871b0;pointer-events:none}
+.guild-single-hero .guild-caret {position:absolute;right:13px;top:10px;font-size:24px;color:#c5c5c5;pointer-events:none;line-height:28px}
+.guild-single-hero .guild-add {height:60px;margin:16px 0 0 16px;font-size:18px;padding:0 18px;gap:12px}
+.guild-single-hero .guild-add svg {width:26px;height:26px}
+.guild-single-hero .elementor-element-ee49e15 {width:100%;flex:none;position:relative;margin-top:0}
+@media(max-width:1100px) and (min-width:901px) {.guild-single-hero .guild-config {width:calc(100% + 130px);margin-left:-130px}.guild-single-hero .guild-config label {padding:0 9px}.guild-single-hero .guild-config select {font-size:14px}.guild-single-hero .guild-add {font-size:16px;margin-left:10px}}
+@media(max-width:900px) {.elementor-16996 .elementor-element.elementor-element-767c751.guild-single-hero {padding-top:96px}.guild-single-hero .guild-hero-copy {padding-top:0;padding-bottom:0}.guild-single-hero .guild-config {width:100%;margin:12px 0 0}.guild-single-hero .guild-hero-inner {padding-bottom:40px}}
+@media(max-width:620px) {.guild-single-hero .guild-config {grid-template-columns:1fr 1fr;gap:18px 0;padding:18px 10px}.guild-single-hero .guild-config label::after {display:none}.guild-single-hero .guild-config label {padding:0 8px}.guild-single-hero .guild-add {margin:24px 8px 0;width:calc(100% - 16px);font-size:16px;height:52px}.guild-single-hero .guild-config select {font-size:14px}.elementor-16996 .elementor-element.elementor-element-767c751.guild-single-hero {padding-top:72px}}
+/* Isolate native select geometry from the saved site's global form styles. */
+.guild-single-hero form.guild-config .guild-color-control,
+.guild-single-hero form.guild-config .guild-control {
+  display:block;position:relative;margin-top:8px;height:52px;min-width:0;
+  background:#101010;border:1px solid #3e3e3f;border-radius:6px;
+}
+.guild-single-hero form.guild-config label select {
+  appearance:none!important;-webkit-appearance:none!important;
+  box-sizing:border-box!important;display:block!important;
+  width:100%!important;max-width:100%!important;min-width:0!important;
+  height:50px!important;min-height:50px!important;margin:0!important;
+  padding:0 32px 0 38px!important;text-indent:0!important;
+  border:0!important;border-radius:6px!important;
+  background:transparent!important;background-image:none!important;
+  color:#f3f4f6!important;font-family:'Plus Jakarta Sans',sans-serif!important;
+  font-size:14px!important;font-weight:500!important;line-height:normal!important;
+  box-shadow:none!important;outline-offset:3px;
+}
+.guild-single-hero form.guild-config .guild-swatch {
+  position:absolute;left:12px;top:50%;transform:translateY(-50%);
+  width:18px;height:18px;margin:0;pointer-events:none;z-index:1;
+}
+.guild-single-hero form.guild-config .guild-control>svg {
+  position:absolute;left:12px;top:50%;transform:translateY(-50%);
+  width:18px;height:18px;margin:0;pointer-events:none;z-index:1;
+}
+.guild-single-hero form.guild-config .guild-caret {
+  position:absolute;right:14px;top:50%;transform:translateY(-50%);
+  width:12px;height:8px;margin:0;font-size:0;line-height:0;
+  border:0;background:none;pointer-events:none;
+}
+.guild-single-hero form.guild-config .guild-caret::after {
+  content:'';position:absolute;top:-2px;left:1px;width:8px;height:8px;
+  border-right:2px solid #c5c5c5;border-bottom:2px solid #c5c5c5;
+  transform:rotate(45deg);
+}
+@media(max-width:1100px) {
+  .guild-single-hero form.guild-config label select {font-size:14px!important}
+}
+/* Compact dock; primary action uses the site's standard button typography/padding. */
+.guild-single-hero form.guild-config {
+  width:100%;max-width:700px;margin:12px 0 0 auto;
+  grid-template-columns:minmax(0,1.15fr) minmax(0,.9fr) minmax(0,1fr) auto;
+  padding:16px 12px;border-radius:16px;gap:0;
+}
+.guild-single-hero form.guild-config label {padding:0 10px;font-size:14px;line-height:20px}
+.guild-single-hero form.guild-config label::after {height:36px;bottom:4px}
+.guild-single-hero form.guild-config .guild-color-control,
+.guild-single-hero form.guild-config .guild-control {height:44px;margin-top:6px}
+.guild-single-hero form.guild-config label select {height:42px!important;min-height:42px!important}
+.guild-single-hero form.guild-config button.guild-add {
+  box-sizing:border-box;width:auto;min-width:0;height:auto;min-height:0;
+  margin:26px 0 0 12px;padding:10px 16px;border:1px solid transparent;
+  border-radius:999px;gap:8px;font-family:'Plus Jakarta Sans',sans-serif;
+  font-size:16px;font-weight:600;line-height:24px;letter-spacing:-.6px;
+  background:#3871b0;color:#fff;box-shadow:0 1px 3.3px rgba(255,255,255,.45) inset;
+}
+.guild-single-hero form.guild-config button.guild-add svg {width:18px;height:18px;flex:none}
+@media(max-width:1100px) and (min-width:901px) {
+  .guild-single-hero form.guild-config {max-width:700px;width:calc(100% + 40px);margin-left:-40px}
+  .guild-single-hero form.guild-config label {padding:0 7px}
+}
+@media(max-width:620px) {
+  .guild-single-hero form.guild-config {width:100%;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:14px 0;padding:14px 10px;margin-left:0}
+  .guild-single-hero form.guild-config button.guild-add {justify-self:start;margin:26px 0 0 10px}
+}
+/* Keep the cart dock in the photo area, ahead of the lower headline overlay. */
+.elementor-16996 .elementor-element.elementor-element-767c751.guild-single-hero {
+  background-image:linear-gradient(90deg,rgba(16,16,16,.42),rgba(16,16,16,.08)),linear-gradient(0deg,rgba(16,16,16,.8) 0%,rgba(16,16,16,.18) 14%,transparent 30%),url('https://959cd70c.delivery.rocketcdn.me/wp-content/uploads/2024/11/PRODUCT-BG.png');
+}
+.guild-single-hero form.guild-config {position:relative;top:-30px}
+.guild-single-hero .guild-hero-inner {padding-bottom:136px}
+.elementor-16996 .guild-single-hero .elementor-element.elementor-element-ee49e15 {
+  margin-top:0;--margin-top:0px;position:relative;z-index:0;
+}
+/* The original SVG's negative margins pulled its overlay into the purchase dock. */
+.guild-single-hero .elementor-50513 .elementor-element.elementor-element-f9c3db1>.elementor-widget-container {
+  margin-top:-110px;margin-bottom:-120px;
+}
+@media(max-width:900px) {.guild-single-hero .guild-hero-inner {padding-bottom:120px}}
+@media(max-width:620px) {.guild-single-hero form.guild-config {top:-24px}.guild-single-hero .guild-hero-inner {padding-bottom:64px}}
+/* A reserved home below the animated headline; float only after it scrolls away. */
+.guild-quote-slot {
+  box-sizing:border-box;display:block;width:100%;position:relative;
+  padding:28px 32px 36px;min-height:calc(var(--quote-height,80px) + 64px);
+  background:#101010;z-index:10;
+}
+.elementor-16996 .elementor-element.elementor-element-0a807ef.guild-quote-bar {
+  position:relative!important;inset:auto!important;transform:none!important;
+  width:100%!important;max-width:1140px;margin:0 auto!important;
+  visibility:visible!important;opacity:1!important;animation:none!important;
+}
+.elementor-16996 .elementor-element.elementor-element-0a807ef.guild-quote-bar.is-floating {
+  position:fixed!important;top:auto!important;bottom:80px!important;
+  left:50%!important;right:auto!important;transform:translateX(-50%)!important;
+  width:calc(100% - 64px)!important;z-index:100;
+}
+@media(max-width:767px) {
+  .guild-quote-slot {padding:24px 16px 28px;min-height:calc(var(--quote-height,80px) + 52px)}
+  .elementor-16996 .elementor-element.elementor-element-0a807ef.guild-quote-bar.is-floating {bottom:10px!important;width:calc(100% - 32px)!important}
+}
+/* Keep the original quote template's visual scope after moving it out of the footer. */
+.guild-quote-slot.elementor-19615 .elementor-element.elementor-element-0a807ef.guild-quote-bar {
+  background-color:#101010ad;border:1px solid var(--e-global-color-secondary,#3e3e3f);
+  border-radius:52px;box-shadow:0 4px 30px rgba(0,0,0,.1);
+  backdrop-filter:blur(5px);-webkit-backdrop-filter:blur(5px);
+}
+/* Align the dock's right edge with the site's centered 1140px content frame. */
+.guild-single-hero form.guild-config {
+  width:100%;max-width:700px;margin-left:0;margin-right:0;
+  right:max(0px,calc((min(100vw,1440px) - 1140px)/2 - 64px));
+}
+@media(max-width:1100px) {
+  .guild-single-hero form.guild-config {width:100%;margin-left:0;right:0}
+}
+
+/* Slightly tighter option spacing while keeping the primary action unchanged. */
+.guild-single-hero form.guild-config {max-width:660px;padding-inline:10px}
+.guild-single-hero form.guild-config label {padding-inline:7px}
+@media(max-width:620px) {
+  .guild-single-hero form.guild-config {max-width:100%}
+}
+/* One bar, continuous scroll position, bounded by its two reserved resting spaces. */
+.guild-quote-end-slot {min-height:calc(var(--quote-height,80px) + 64px);background:#101010;position:relative}
+.elementor-16996 .elementor-element.elementor-element-0a807ef.guild-quote-bar {
+  position:fixed!important;top:var(--quote-top)!important;bottom:auto!important;
+  left:var(--quote-left)!important;right:auto!important;
+  width:var(--quote-width)!important;transform:translateX(-50%)!important;
+  transition:none!important;animation:none!important;z-index:100;
+}
+.guild-quote-bar *, .guild-quote-bar::before, .guild-quote-bar::after {
+  animation:none!important;
+}
+
+/* Tighten the lower resting area and remove the footer's extra 100px lead-in. */
+.guild-quote-end-slot {min-height:calc(var(--quote-height,80px) + 32px)}
+.guild-quote-end-slot + footer.elementor-location-footer .elementor-element.elementor-element-10f38bb {
+  --padding-top:32px;padding-top:32px;margin-top:0;
+}
+@media(max-width:767px) {
+  .guild-quote-end-slot + footer.elementor-location-footer .elementor-element.elementor-element-10f38bb {--padding-top:24px;padding-top:24px}
+}
+
+/* Selected build price occupies the label row above the primary action. */
+.guild-single-hero form.guild-config .guild-purchase {
+  display:flex;flex-direction:column;align-items:center;gap:6px;margin-left:12px;min-width:0;
+}
+.guild-single-hero form.guild-config .guild-selected-price {
+  display:block;font-family:'Plus Jakarta Sans',sans-serif;font-size:16px;
+  font-weight:600;line-height:20px;color:#f3f4f6;white-space:nowrap;
+  font-variant-numeric:tabular-nums;
+}
+.guild-single-hero form.guild-config .guild-purchase button.guild-add {margin:0}
+@media(max-width:620px) {
+  .guild-single-hero form.guild-config .guild-purchase {margin-left:10px;align-items:flex-start}
+}
+/* Mobile hero copy: centered, smaller supporting text and tighter benefits. */
+@media(max-width:767px) {
+  .guild-single-hero .guild-hero-copy {text-align:center}
+  .guild-single-hero .guild-hero-copy h1 {text-align:center}
+  .guild-single-hero .guild-hero-copy .guild-range {
+    font-size:18px;line-height:1.5;text-align:center;
+    max-width:none;margin:0 auto 24px;
+  }
+  .guild-single-hero .guild-hero-copy .guild-benefits {
+    gap:10px;margin:0 auto;padding:0;max-width:100%;
+  }
+  .guild-single-hero .guild-hero-copy .guild-benefits li {
+    justify-content:center;align-items:flex-start;text-align:center;
+    font-size:18px;line-height:1.4;gap:10px;
+  }
+  .guild-single-hero .guild-hero-copy .guild-benefits li span {
+    width:20px;height:20px;font-size:14px;margin-top:3px;
+  }
+}
+.guild-mobile-chooser {display:none}
+@media(max-width:767px) {
+ .guild-single-hero form.guild-config {display:none}
+ .guild-single-hero .guild-mobile-chooser {display:block;background:rgba(16,16,16,.97);border:1px solid #3e3e3f;border-radius:24px;padding:12px 22px 24px;color:#f3f4f6;font-family:'Plus Jakarta Sans',sans-serif;box-shadow:0 12px 32px #0004}
+ .guild-mobile-handle {width:40px;height:5px;border-radius:4px;background:#777e85;margin:0 auto 14px}
+ .guild-mobile-brand {font-size:14px;font-weight:800;font-style:italic;letter-spacing:2px;color:#c5c5c5}
+ .guild-single-hero .guild-mobile-chooser h2 {font:400 26px/1.25 'Plus Jakarta Sans',sans-serif;letter-spacing:-.5px;margin:8px 0 12px;padding-bottom:12px;border-bottom:1px solid #3e3e3f;color:#f3f4f6}
+ .guild-mobile-chooser p {font-size:14px;line-height:1.5;margin:0 0 10px;color:#c5c5c5}
+ .guild-mobile-colors p b {margin-right:10px}
+ .guild-mobile-swatches {display:flex;flex-wrap:wrap;gap:12px;margin-bottom:18px}
+ .guild-mobile-swatches button {width:28px;height:28px;flex:none;border:1px solid #aaa;border-radius:50%;padding:0;background:var(--swatch);cursor:pointer}
+ .guild-mobile-swatches button[aria-pressed=true] {outline:3px solid #3871b0;outline-offset:3px}
+ .guild-mobile-power>div {display:flex;border:1px solid #3e3e3f;border-radius:8px;overflow:hidden;margin-bottom:14px;background:#1b1b1b}
+ .guild-mobile-power button {display:flex;align-items:center;justify-content:center;gap:10px;width:50%;height:44px;padding:0;border:0;background:transparent;color:#f3f4f6;font:500 14px 'Plus Jakarta Sans',sans-serif;cursor:pointer}
+ .guild-mobile-power button[aria-pressed=true] {background:#3871b0;border-radius:8px;box-shadow:inset 0 0 0 1px #5a90c9}
+ .guild-mobile-power button:disabled {opacity:.4;cursor:not-allowed}
+ .guild-mobile-chooser svg {width:18px;height:18px;flex:none}
+ .guild-mobile-model {display:block;color:#c5c5c5;font-size:14px;font-weight:600}
+ .guild-single-hero .guild-mobile-model select {display:block!important;width:100%;height:44px;padding:0 14px;margin:6px 0 12px;background:#1b1b1b;border:1px solid #3e3e3f;border-radius:6px;color:#f3f4f6;font:400 14px 'Plus Jakarta Sans',sans-serif;color-scheme:dark}
+ .guild-mobile-price {border-top:1px solid #3e3e3f;padding:12px 0 16px;display:grid;gap:2px}
+ .guild-mobile-price span {font-size:14px;color:#c5c5c5}
+ .guild-mobile-price strong {font-size:28px;line-height:1.3;font-weight:700;font-variant-numeric:tabular-nums}
+ .guild-mobile-chooser a {display:flex;align-items:center;justify-content:center;gap:14px;width:100%;min-height:44px;border-radius:999px;font-size:14px;font-weight:600;text-decoration:none;color:#fff}
+ .guild-mobile-quote {background:#3871b0;border:1px solid #5a90c9;box-shadow:inset 0 1px 3px #ffffff50;margin-bottom:10px}
+ .guild-mobile-brochure {background:transparent;border:1px solid #3871b0}
+ .guild-mobile-chooser :focus-visible {outline:2px solid #8fbdf0;outline-offset:4px}
+}
+
+/* Temporarily hide mobile copy; shift the photo scene by the same removed height. */
+@media(max-width:767px) {
+  .guild-single-hero .guild-hero-copy {display:none}
+  .elementor-16996 .elementor-element.elementor-element-767c751.guild-single-hero {
+    background-size:100% 100%,100% 100%,var(--mobile-scene-size,cover);
+    background-position:center,center,center var(--mobile-scene-y,0px);
+  }
+}
+/* Mobile chooser stays above the hero and lower headline overlay layers. */
+@media(max-width:767px) {
+  .guild-single-hero .guild-hero-inner {position:relative;z-index:10}
+  .guild-single-hero .guild-mobile-chooser {position:relative;z-index:11;opacity:1;isolation:isolate}
+  .guild-single-hero::before,.guild-single-hero::after,
+  .guild-single-hero>.elementor-motion-effects-container {z-index:-1;pointer-events:none}
+  .elementor-16996 .guild-single-hero .elementor-element.elementor-element-ee49e15 {z-index:0}
+}
+/* Lift the entire mobile scene together so cart, landscape and chooser stay aligned. */
+@media(max-width:767px) {
+  .elementor-16996 .elementor-element.elementor-element-767c751.guild-single-hero {
+    padding-top:42px;
+    background-position:center,center,center calc(var(--mobile-scene-y,0px) - 30px);
+  }
+}
+
+@media(min-width:541px) and (max-width:767px) {
+  .elementor-16996 .elementor-element.elementor-element-767c751.guild-single-hero {padding-top:66px}
+}
+/* Mobile chooser: exactly 18px clearance on each side of the viewport. */
+@media(max-width:767px) {
+  .guild-single-hero .guild-mobile-chooser {
+    width:calc(100vw - 36px);
+    max-width:none;
+    margin-left:calc((100% - (100vw - 36px)) / 2);
+    margin-right:calc((100% - (100vw - 36px)) / 2);
+    box-sizing:border-box;
+  }
+}
+/* Compact mobile power toggle and an inset model chevron. */
+@media(max-width:767px) {
+  .guild-single-hero .guild-mobile-power button {height:38px}
+  .guild-single-hero .guild-mobile-model {position:relative}
+  .guild-single-hero .guild-mobile-model select {
+    appearance:none!important;-webkit-appearance:none!important;
+    background-image:none!important;padding-right:42px!important;
+  }
+  .guild-single-hero .guild-mobile-model::after {
+    content:'';position:absolute;right:18px;bottom:30px;
+    width:8px;height:8px;border-right:2px solid #c5c5c5;
+    border-bottom:2px solid #c5c5c5;transform:rotate(45deg);
+    pointer-events:none;
+  }
+}
+.guild-mobile-dots {display:none}
+@media(max-width:767px) {
+  .guild-single-hero .guild-gallery {margin-bottom:-28px}
+  .guild-single-hero .guild-mobile-dots {
+    position:relative;z-index:11;display:flex;justify-content:center;
+    align-items:center;flex-wrap:wrap;gap:12px;padding:0;
+    margin:0 auto 14px;max-width:100%;
+  }
+  .guild-single-hero .guild-mobile-dots button {
+    position:relative;display:block;width:11px;height:11px;
+    border:0;border-radius:50%;padding:0;background:rgba(255,255,255,.4);
+    cursor:pointer;flex:none;
+  }
+  .guild-single-hero .guild-mobile-dots button[aria-pressed=true] {background:#fff}
+  .guild-single-hero .guild-mobile-dots button::before {content:'';position:absolute;inset:-6px}
+  .guild-single-hero .guild-mobile-dots button:focus-visible {outline:2px solid #8fbdf0;outline-offset:4px}
+}
+
+@media(max-width:767px) {
+  .guild-single-hero .guild-mobile-model::after {content:none}
+  .guild-single-hero .guild-mobile-model-field {position:relative;margin:6px 0 12px;height:44px}
+  .guild-single-hero .guild-mobile-model-field select {margin:0}
+  .guild-single-hero .guild-mobile-model-field::after {
+    content:'';position:absolute;right:18px;top:50%;
+    width:8px;height:8px;border-right:2px solid #c5c5c5;
+    border-bottom:2px solid #c5c5c5;transform:translateY(-65%) rotate(45deg);
+    pointer-events:none;
+  }
+  .guild-single-hero .guild-mobile-dots {flex-wrap:nowrap;justify-content:center}
+}
+@media(max-width:767px) {
+  .guild-single-hero .guild-mobile-chooser h2,
+  .guild-single-hero .guild-mobile-chooser .guild-mobile-price strong {
+    font-size:24px;
+  }
+}
+@media(max-width:767px) {
+  .guild-single-hero .guild-mobile-power button {
+    height:36px;min-height:36px;box-sizing:border-box;
+  }
+}
+/* Desktop customization panel spans both hero columns. */
+.guild-single-hero form.guild-config {display:none}
+.guild-desktop-chooser {display:none}
+@media(min-width:768px) {
+ .guild-single-hero .guild-desktop-chooser {display:block;grid-column:1/-1;width:100%;max-width:1140px;justify-self:center;position:relative;z-index:12;margin-top:16px;padding:24px 28px;background:rgba(20,20,20,.97);border:1px solid #3e3e3f;border-radius:16px;color:#f3f4f6}
+ .guild-desktop-choice-heading {display:flex;align-items:center;justify-content:space-between;gap:24px;padding-bottom:18px;margin-bottom:20px;border-bottom:1px solid #3e3e3f}
+ .guild-single-hero .guild-desktop-choice-heading h2 {margin:0;font:600 24px/1.3 'Plus Jakarta Sans',sans-serif;letter-spacing:-.5px;color:#f3f4f6}
+ .guild-desktop-choice-heading>div {display:flex;align-items:baseline;gap:12px}
+ .guild-desktop-choice-heading span {font-size:14px;color:#c5c5c5}
+ .guild-desktop-choice-heading strong {font-size:24px;font-weight:600;font-variant-numeric:tabular-nums}
+ .guild-desktop-choice-row {display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.2fr) minmax(0,1fr) minmax(180px,1fr);gap:24px;align-items:start}
+ .guild-desktop-choice-row label,.guild-desktop-power>span {display:block;margin:0;color:#c5c5c5;font-size:14px;font-weight:600;line-height:20px}
+ .guild-desktop-select {position:relative;margin-top:8px}
+ .guild-single-hero .guild-desktop-select select {display:block!important;appearance:none!important;width:100%;height:44px;min-height:44px;padding:0 36px 0 12px;margin:0;border:1px solid #3e3e3f;border-radius:6px;background:#101010;color:#f3f4f6;font:500 14px 'Plus Jakarta Sans',sans-serif;color-scheme:dark}
+ .guild-desktop-choice-row label:first-child select {padding-left:38px}
+ .guild-desktop-select::after {content:'';position:absolute;right:16px;top:17px;width:8px;height:8px;border-right:2px solid #c5c5c5;border-bottom:2px solid #c5c5c5;transform:rotate(45deg);pointer-events:none}
+ .guild-desktop-swatch {position:absolute;left:12px;top:13px;width:18px;height:18px;border-radius:50%;border:1px solid #aaa;pointer-events:none}
+ .guild-desktop-power>div {display:flex;margin-top:8px;border:1px solid #3e3e3f;border-radius:6px;overflow:hidden;background:#1b1b1b}
+ .guild-desktop-power button {display:flex;justify-content:center;align-items:center;gap:8px;width:50%;height:42px;border:0;padding:0 8px;background:transparent;color:#fff;font:500 14px 'Plus Jakarta Sans',sans-serif;cursor:pointer}
+ .guild-desktop-power button[aria-pressed=true] {background:#3871b0;box-shadow:inset 0 0 0 1px #5a90c9;border-radius:5px}
+ .guild-desktop-power button:disabled {opacity:.4;cursor:not-allowed}
+ .guild-desktop-chooser svg {width:18px;height:18px;flex:none}
+ .guild-desktop-actions {display:grid;gap:10px}
+ .guild-desktop-actions a {display:flex;align-items:center;justify-content:center;gap:8px;padding:10px 16px;min-height:44px;border:1px solid #3871b0;border-radius:999px;font-size:14px;font-weight:600;line-height:22px;color:#fff;text-decoration:none;white-space:nowrap}
+ .guild-desktop-quote {background:#3871b0;box-shadow:inset 0 1px 3px #ffffff50}
+ .guild-desktop-brochure {background:transparent}
+ .guild-desktop-chooser :focus-visible {outline:2px solid #8fbdf0;outline-offset:3px}
+}
+@media(min-width:768px) and (max-width:1000px) {
+ .guild-desktop-choice-row {grid-template-columns:1fr 1fr;gap:20px}
+}
+.guild-hero-brochure {display:none}
+@media(min-width:768px) {
+ .guild-single-hero .guild-hero-brochure {display:inline-flex;align-items:center;justify-content:center;gap:10px;margin-top:24px;padding:10px 20px;border:1px solid #3871b0;border-radius:999px;color:#fff;font:600 16px/24px 'Plus Jakarta Sans',sans-serif;text-decoration:none}
+ .guild-hero-brochure svg {width:18px;height:18px}
+ .guild-single-hero .guild-desktop-chooser {margin-top:-24px;padding:16px 24px}
+ .guild-single-hero .guild-desktop-choice-heading {padding-bottom:10px;margin-bottom:12px}
+ .guild-single-hero .guild-desktop-choice-row {align-items:end;gap:20px}
+ .guild-single-hero .guild-desktop-select {height:40px;min-width:0}
+ .guild-single-hero .guild-desktop-select select {
+   box-sizing:border-box!important;display:block!important;opacity:1!important;
+   height:40px!important;min-height:40px!important;max-height:40px!important;
+   margin:0!important;padding:0 36px 0 12px!important;text-indent:0!important;
+   font:500 14px 'Plus Jakarta Sans',sans-serif!important;line-height:normal!important;
+   background-image:none!important;box-shadow:none!important;
+ }
+ .guild-single-hero .guild-desktop-choice-row label:first-child select {padding-left:40px!important}
+ .guild-single-hero .guild-desktop-select::after {top:50%;transform:translateY(-65%) rotate(45deg)}
+ .guild-single-hero .guild-desktop-swatch {top:50%;transform:translateY(-50%)}
+ .guild-single-hero .guild-desktop-power button {height:38px;min-height:38px;padding:0 8px}
+ .guild-single-hero .guild-desktop-actions {align-self:end}
+}
+/* Shared ash-gray secondary action with the site's soft inset highlight. */
+.guild-single-hero .guild-mobile-chooser a.guild-mobile-brochure,
+.guild-single-hero .guild-desktop-actions a.guild-desktop-brochure {
+  background:#3e3e3f;color:#fff;border:1px solid #626263;
+  box-shadow:inset 0 2px 5px rgba(255,255,255,.35),inset 0 -1px 3px rgba(255,255,255,.08);
+  border-radius:999px;
+}
+@media(min-width:768px) {
+ .guild-single-hero .guild-desktop-choice-row {
+   grid-template-columns:minmax(0,1fr) minmax(0,1.15fr) minmax(0,.9fr) auto;
+   gap:16px;
+ }
+ .guild-single-hero .guild-desktop-actions {display:flex;align-items:center;gap:10px;flex-wrap:nowrap}
+ .guild-single-hero .guild-desktop-actions a {padding:10px 14px}
+}
+@media(min-width:768px) and (max-width:1100px) {
+ .guild-single-hero .guild-desktop-choice-row {grid-template-columns:1fr 1fr 1fr}
+ .guild-single-hero .guild-desktop-actions {grid-column:1/-1;justify-content:flex-end}
+}
+
+@media(min-width:768px) {
+ .guild-single-hero a.guild-hero-brochure {
+   background:#3e3e3f;color:#fff;border:1px solid #626263;
+   box-shadow:inset 0 2px 5px rgba(255,255,255,.35),inset 0 -1px 3px rgba(255,255,255,.08);
+ }
+ .guild-single-hero .guild-desktop-choice-row {grid-template-columns:minmax(0,1fr) minmax(0,1.2fr) minmax(0,1fr) minmax(180px,1fr);gap:20px}
+ .guild-single-hero .guild-desktop-actions {grid-column:auto;display:grid}
+}
+@media(min-width:768px) and (max-width:1000px) {
+ .guild-single-hero .guild-desktop-choice-row {grid-template-columns:1fr 1fr}
+}
+@media(max-width:767px) {
+  .guild-mobile-options-row {display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.15fr);gap:12px;align-items:start;margin-bottom:12px}
+  .guild-mobile-options-row .guild-mobile-model {grid-column:1;grid-row:1;min-width:0;line-height:20px}
+  .guild-mobile-options-row .guild-mobile-power {grid-column:2;grid-row:1;min-width:0}
+  .guild-mobile-options-row .guild-mobile-power>p {margin:0 0 6px;font-size:14px;line-height:20px;font-weight:600}
+  .guild-mobile-options-row .guild-mobile-power>div {margin:0;height:38px;box-sizing:border-box}
+  .guild-single-hero .guild-mobile-options-row .guild-mobile-model-field {height:38px;margin:6px 0 0}
+  .guild-single-hero .guild-mobile-options-row .guild-mobile-model select {height:38px;min-height:38px;padding-left:10px;padding-right:28px!important}
+  .guild-single-hero .guild-mobile-options-row .guild-mobile-model-field::after {right:12px}
+  .guild-mobile-options-row .guild-mobile-power button {gap:5px;font-size:12px;padding:0 4px}
+  .guild-mobile-options-row .guild-mobile-power svg {width:16px;height:16px}
+}
+/* Prevent global form padding from clipping the compact mobile model value. */
+@media(max-width:767px) {
+  .guild-single-hero .guild-mobile-options-row .guild-mobile-model-field {
+    height:38px;box-sizing:border-box;
+  }
+  .guild-single-hero .guild-mobile-options-row .guild-mobile-model select {
+    box-sizing:border-box!important;display:block!important;
+    height:38px!important;min-height:38px!important;max-height:38px!important;
+    margin:0!important;padding:0 32px 0 12px!important;text-indent:0!important;
+    font:400 14px 'Plus Jakarta Sans',sans-serif!important;line-height:normal!important;
+    appearance:none!important;-webkit-appearance:none!important;
+    background-image:none!important;box-shadow:none!important;
+  }
+  .guild-single-hero .guild-mobile-options-row .guild-mobile-model-field::after {
+    top:50%;bottom:auto;right:14px;transform:translateY(-65%) rotate(45deg);
+  }
+}
+@media(max-width:767px) {
+  .guild-single-hero .guild-mobile-chooser .guild-mobile-price {border-top:0}
+}
